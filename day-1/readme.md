@@ -1,2 +1,2 @@
-# this edit from vscode
-## i would love to if it works
+# i learned how to connect with github  
+# and push it like this 
