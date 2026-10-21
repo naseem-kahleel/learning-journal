@@ -15,7 +15,7 @@ if (stock <= 5) {
 
 else {
 
-    console.log ("out of stock")
+    console.log ("out of stock!")
 }
 
 console.log("Stock : " + stock)
