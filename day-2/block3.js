@@ -29,6 +29,6 @@ function priceAfterDiscount(price ,discount){
 const totaldiscount = priceAfterDiscount(10 ,2);
 console.log(totaldiscount);
 
-const total5 = inventoryValue(totaldiscount, 3);
+const total5 = inventoryValue(totaldiscount , 3);
 
 console.log(total5);
