@@ -13,4 +13,4 @@ if(stock > 0) {
     console.log(newinventoryValue)
 }
 
-console.log ("5") + 2 ;
+console.log ("5!") + 2 ;
