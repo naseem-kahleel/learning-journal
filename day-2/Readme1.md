@@ -10,4 +10,4 @@
 #### because when the stock is 0 hes gonna sell 1 more product while there is no longer products at the stock.
 
 ## Predict "5" + 1 and Number("5") + 1; explain the difference.
-#### at the firt one it combines between 5 and 1 , the other one it really print the 5 with dismissing the 1.
+#### at the firt one it combines between 5 and 1 ,the other one it really print the 5 with dismissing the 1.
