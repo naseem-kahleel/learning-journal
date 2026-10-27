@@ -21,7 +21,7 @@ function inventoryValue1( price , quantity){
 
     function stockAfterSale(currentStock){
 
-        currentStock = Price;
+        currentStock = Price
         return currentStock * Stock;
         
     }
