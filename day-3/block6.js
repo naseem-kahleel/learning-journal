@@ -58,10 +58,10 @@ console.log("Restock the stock: " + stockTicket);
 let requestedQuantity = 1;
 
 if (canSell(stockTicket, requestedQuantity)) {
-    console.log("Accept");
+    console.log("Accept!");
     stockTicket = stockTicket - requestedQuantity;
 } else {
-    console.log("Reject");
+    console.log("Reject!");
 }
 
 console.log("Remaining stock: " + stockTicket);
