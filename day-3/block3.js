@@ -28,3 +28,12 @@ function stockAfterSale(currentStock){
 
     stock = stockAfterSale(currentStock);
     console.log("remain stock " + stock);
+
+    function reStock(currentStock , deliveryQuantity){
+
+        return currentStock + deliveryQuantity;  
+    }
+
+    console.log(reStock(0 , 3));
+    console.log(reStock(2 , 0));
+    console.log(reStock(2 , 4));
