@@ -9,6 +9,14 @@ function reStock(stock , deliveryQuantity){
     return stock + deliveryQuantity;
 }
 
+function stockAfterSale(currentStock) {
+    if (currentStock > 0) {
+        return currentStock - 1;
+    } else {
+        return 0;
+    }
+}
+
 let penPrice = 4;
 let penStock = 3;
 console.log("Pen")
@@ -17,7 +25,7 @@ console.log("inventory value: " + (inventoryValue(penPrice , penStock)))
 if (penStock > 0){
 
     console.log("seccessful sale")
-    penStock--
+    penStock = stockAfterSale(penStock)
 }
 
 else {
@@ -37,7 +45,7 @@ console.log("Inventory value: " + (inventoryValue(folderPrice , folderStock)))
 if (folderStock > 0){
 
     console.log("seccessful sale")
-    folderStock--
+    folderStock = stockAfterSale(folderStock)
 }
 
 else {
