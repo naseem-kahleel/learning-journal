@@ -55,7 +55,7 @@ console.log("Remaining stock: " + stockTicket);
 stockTicket = reStock(stockTicket, 2);
 console.log("Restock the stock: " + stockTicket);
 
-let requestedQuantity = 1;
+let requestedQuantity = 1; 
 
 if (canSell(stockTicket, requestedQuantity)) {
     console.log("Accept!");
