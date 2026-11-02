@@ -1,39 +1,54 @@
-let quantityofSticker = 6;
-let quantityofBadge = 7;
-let quantityofNotebook = 8;
+let quantityOfSticker = 5;
+let quantityOfBadge = 6;
+let quantityOfNotebook = 7;
+let stock = 0;
 
-function showProduct(productName) {
 
-    console.log("Product: " + productName)
+function showStock(productName , quantity){
+
+    console.log(productName , quantity)
 }
 
-showProduct("Sticker");
-showProduct("Badge");
-showProduct("Notebook");
+function showSaleMessage(stickerStock , badgeStock , Notebook){
 
-function showStock(productName, quantity) {
+    if ( stickerStock > 0 ){
+        
+        console.log("Sold one sticker!")
 
-    console.log("Product: " + (productName) + " The Quantity: " + quantity)
-}
+        quantityOfSticker-- ;
+        console.log(quantityOfSticker)
+    }
 
-showStock("Sticker" , quantityofSticker );
-showStock("Badge" , quantityofBadge);
-showStock("Notebook" , quantityofNotebook);
+     if (badgeStock > 0){
 
-function showsalemessage(saleproduct , quantity , salequantity){
+        console.log("Sold one badge")
 
-    if (( quantity - salequantity ) >= 0 ) {
+        quantityOfBadge--
+        console.log(quantityOfBadge)
+    }
 
-        let remainStock = quantity - salequantity 
-        console.log(remainStock)
-        quantity = remainStock;
+     if (Notebook > 0){
+
+        console.log("Sold one notebook")
+
+        quantityOfNotebook--
+        console.log(quantityOfNotebook)
     }
 
     else {
 
         console.log("Out of stock")
     }
+
+    
 }
-    showsalemessage("Notebook" , quantityofNotebook , 6)
-    showStock("Notebook" , quantityofNotebook);
+
+showStock("Sticker" , 5);
+showStock("Badge" , 6);
+showStock("Notebook" , 7);
+
+showSaleMessage(5 , 6 , 7)
+
+
+
 
