@@ -7,7 +7,7 @@ let inventoryValue = Stock * Price;
 
 function sell(quantity){
 
-    if ( Stock > 0 && Stock <= 5){
+    if ( Stock > 0 && Stock <= 5 && quantity > 0 && quantity <= 5){
 
     console.log("Sold one!")
     Stock = Stock - quantity ;
@@ -34,8 +34,9 @@ else {
 }
 
 
-sell(5);
+
 sell(1);
+sell(0);
 
 
 
