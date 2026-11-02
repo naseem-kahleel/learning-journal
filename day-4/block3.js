@@ -46,7 +46,7 @@ function restock(delivreyquantity){
 
     else {
 
-        console.log("Not a correct value")
+        console.log("Not a correct value!")
     }
 }
 
