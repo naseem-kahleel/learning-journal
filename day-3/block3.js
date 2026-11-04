@@ -1,16 +1,14 @@
 function inventoryValue(price , quantity){
 
-    return price * quantity
+    return price * quantity;
 }
 
-console.log("The inventroy value: "+ inventoryValue(4 , 3));
-console.log("The inventroy value: "+ inventoryValue(4 , 0));
-console.log("The inventroy value: "+ inventoryValue(0 , 3));
+function reStock(currentStock , deliveryQuantity){
 
+        return currentStock + deliveryQuantity;  
+    }
 
-let currentStock = 5;
-
-function stockAfterSale(currentStock){
+    function stockAfterSale(currentStock){
 
     
     if(currentStock > 0){
@@ -26,13 +24,14 @@ function stockAfterSale(currentStock){
     }
 }
 
-    stock = stockAfterSale(currentStock);
+
+console.log("The inventroy value: "+ inventoryValue(4 , 3));
+console.log("The inventroy value: "+ inventoryValue(4 , 0));
+console.log("The inventroy value: "+ inventoryValue(0 , 3));
+
+
+    stock = stockAfterSale(6);
     console.log("remain stock " + stock);
-
-    function reStock(currentStock , deliveryQuantity){
-
-        return currentStock + deliveryQuantity;  
-    }
 
     console.log(reStock(0 , 3));
     console.log(reStock(2 , 0));
