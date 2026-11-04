@@ -2,8 +2,8 @@ function inventoryValue(price, quantity) {
     return price * quantity;
 }
 
-function reStock(newStock, deliveryQuantity) {
-    return newStock + deliveryQuantity;
+function reStock(Stock, deliveryQuantity) {
+    return Stock + deliveryQuantity;
 }
 
 function stockAfterSale(stockTicket) {
@@ -26,7 +26,7 @@ let price = 8;
 let stockTicket = 2;
 
 console.log("The product is ticket");
-console.log("The inventory value: " + inventoryValue(price, stockTicket));
+console.log("The inventory value: " + inventoryValue(8, 2));
 
 if (stockTicket > 0) {
     console.log("Seccessful sale 1");
@@ -34,7 +34,7 @@ if (stockTicket > 0) {
 } else {
     console.log("Out of stock");
 }
-console.log("Remaining stock: " + stockTicket);
+console.log("Remain stock: " + stockTicket);
 
 if (stockTicket > 0) {
     console.log("Seccessful sale 2");
@@ -42,7 +42,7 @@ if (stockTicket > 0) {
 } else {
     console.log("Out of stock");
 }
-console.log("Remaining stock: " + stockTicket);
+console.log("Remain stock: " + stockTicket);
 
 if (stockTicket > 0) {
     console.log("Seccessful sale 3");
@@ -50,10 +50,18 @@ if (stockTicket > 0) {
 } else {
     console.log("Out of stock");
 }
-console.log("Remaining stock: " + stockTicket);
+console.log("Remain stock: " + stockTicket);
 
 stockTicket = reStock(stockTicket, 2);
 console.log("Restock the stock: " + stockTicket);
+
+if (stockTicket > 0) {
+    console.log("Seccessful sale 4");
+    stockTicket = stockAfterSale(stockTicket);
+} else {
+    console.log("Out of stock");
+}
+console.log("Remain stock: " + stockTicket);
 
 let requestedQuantity = 1; 
 
