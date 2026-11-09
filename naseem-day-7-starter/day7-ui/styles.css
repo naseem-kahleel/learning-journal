@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #eef3e9; color: #173d32; font-family: system-ui, sans-serif; line-height: 1.6; }
+.desk { width: min(100% - 32px, 680px); margin: 48px auto; }
+.eyebrow { font-size: .75rem; font-weight: 750; letter-spacing: .12em; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; }
+h2 { margin-top: 0; }
+.product { background: #fff; border: 1px solid #bccbbd; border-radius: 18px; padding: 28px; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.stats div { background: #eff5ed; border-radius: 10px; padding: 12px; }
+dt { font-size: .8rem; }
+dd { margin: 4px 0 0; font-size: 1.4rem; font-weight: 750; }
+label { display: block; font-weight: 700; margin-top: 24px; }
+input { width: 100%; border: 1px solid #7f9b89; border-radius: 8px; padding: 12px; font: inherit; color: inherit; }
+#quantity-help, .note { font-size: .9rem; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+button { border: 2px solid #185b43; border-radius: 8px; background: #185b43; color: #fff; padding: 12px 18px; font: inherit; font-weight: 700; cursor: pointer; }
+button.secondary { background: #fff; color: #185b43; }
+button:hover { background: #103c2d; color: #fff; }
+:focus-visible { outline: 3px solid #b66d00; outline-offset: 4px; }
+#feedback { min-height: 3.2em; border-left: 4px solid #185b43; background: #eff5ed; padding: 12px; }
+@media (max-width: 480px) { .desk { margin: 24px auto; } .product { padding: 18px; } .stats { grid-template-columns: 1fr; } .actions { flex-direction: column; } button { width: 100%; } }
