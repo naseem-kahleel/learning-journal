@@ -23,7 +23,7 @@ function restock(deliveryquantity){
     console.log("inventory value: " + invntoruValue);
   }
   else {2
-    console.log("Refused");
+    console.log("Refused!");
   }
 }
 
